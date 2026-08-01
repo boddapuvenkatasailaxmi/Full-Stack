@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College information portal</title>
+</head>
+<body>
+   <!-- Task -1:Part A-->
+   <!--Displaying college information using headings and paragraphs-->
+   <h1>College Information Portal</h1>
+   <h2>Anil Neerukonda Institute Of Technology and Sciences</h2>
+   <p>
+    <i><b>ANITS (Anil Neerukonda Institute of Technology and Sciences)</b> is a premier autonomous engineering college
+     located in <strong>visakhapatnam,AndhraPradesh</strong>, established in 2001 by the <u>Anil Neerukonda Educational Society.</u>
+     It offers top undergraduate and postgraduate programs with NAAC A+ accreditation.</i></p>
+   <br>
+    <p>
+          <!--subscript ans superscript-->
+          <u><h3>Subscript & Superscript</h3></u>
+            • Water: H<sub>2</sub>O 
+            <br>
+            •  E = mc<sup>2</sup>
+            <br>
+            • Mathematical: x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
+            <br>
+            • Carbon Dioxide: CO<sub>2</sub>
+        </p>
+        <!--ordered & unordered list-->
+        <u><h3>Ordered &Unordered List</h3></u>
+        <p><b>Departments at ANITS</b></p>
+        <ol>
+            <li>
+                  Computer Science & Engineering(CSE)
+            </li>
+            <li>Electronics & Communication (ECE)</li>
+            <li>Information Technology(IT)</li>
+            <li>Mechanical Engineering(Mech)</li>
+            <li>
+                Chemical Engineering(chem)
+            </li>
+        </ol>
+        <br>
+        <b>Facilites At Anits</b>
+         <ul>
+            <li><b>Spacious Campus :</b> having with modern infrastructure</li>
+            <li> <b>Digital Library :</b> books and computers</li>
+            <li> <b>Smart Classrooms :</b>  IoT-enabled digital learning</li>
+            <li> <b>Computer Labs : </b>having in individual departments</li>
+            <li> <b>Hostel Facilities :</b>  2000+ capacity for boys and girls</li>
+            <li> <b>Hospital :</b>  24/7 on-campus health services</li>
+            <li><b>Canteen :</b> provides all types of food</li>
+        </ul>
+        <!--Adding hyperlinks-->
+        <h3><u>Adding Hyperlinks</u></h3>
+        <b>Anits Official Website</b>
+        <a href="https://anits.org/">Anits college</a>
+        <br>
+        <b>Google link</b>
+        <br>
+        <a href = "https://www.google.com/">Google</a>
+        <hr>
+        <!--PART-B-->
+        <h3>PART - B</h3>
+        <h4><u>TABLES & IMAGES</u></h4>
+        <!--Student details in the table-->
+         <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>1</th>
+                    <th>A24126552071</th>
+                    <th>pranathi</th>
+                    <th>pranathi@gmail.com</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>2</th>
+                    <th>A24126552074</th>
+                    <th>Sai laxmi</th>
+                    <th>sai@gmail.com</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>3</th>
+                    <th>A24126552087</th>
+                    <th>Rama</th>
+                    <th>rama@gmail.com</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>4</th>
+                    <th>A24126552099</th>
+                    <th>Samhavya</th>
+                    <th>samhavya@gmail.com</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>5</th>
+                    <th>A24126552125</th>
+                    <th>Vanisree</th>
+                    <th>vanisree@gmail.com</th>
+                </tr>
+            </thead>
+         </table>
+         <br>
+         <b>Anits</b>
+         <br>
+         <img  src="Anits.png" heigth = "100" width="300" alt = "Anits">
+         <br>
+         <img src="library.png"heigth = "100" width = "300"alt = "college library">
+         <hr>
+         <!--PART C-->
+         <h3>PART - C</h3>
+         <h4><u>Student Registration Form</u></h4>
+         <form action="#" method="post">
+            <fieldset>
+                <legend><b>Student Registration form</b></legend>
+                <p>
+                    <label for ="Name">Fullname:</label>
+                    <input type="text" id = "fullname" name = "fullname" placeholder="Enter the name">
+                </p>
+                <p><label for = "Email">Enter the Email:</label>
+                <input type = "email" placeholder = "sai@gmail.com">
+                </p>
+                <p>
+                    <label for="password">Password :</label>
+                    <input type ="password" id = "password" name ="password" placeholder ="enter the password">
+                </p>
+                 <h3>Gender </h3>
+            
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br>
+            
+            <input type="radio" id="prefer-not" name="gender" value="Prefer not to say">
+            <label for="prefer-not">Prefer not to say</label>
+            <br>
+            <h3> Hobbies</h3>
+            
+            <input type="checkbox" id="reading" name="hobbies[]" value="Reading">
+            <label for="reading"> Reading</label><br>
+            <input type="checkbox" id = "listening to music" name = "hobbies" value = "listening to music">
+            <label for = "listening to music">listening to music</label>
+            <br>
+            <input type="checkbox" id = "coding" name = "hobbies" value = "coding">
+            <label for = "coding">coding</label>
+            <br>
+            <input type="checkbox" id = "travelling" name = "hobbies" value = "travelling">
+            <label for = "travelling">travelling</label>
+            <br>
+            <label for="branch">select your branch :</label>
+            <select id="branch" name="branch" required>
+                <option value=""> Select Your Branch </option>
+                <option value="CSE">Computer Science & Engineering (CSE)</option>
+                <option value = "CSD">computerscience(DS)</option>
+                <option value ="CSM">Computer Science(AI & ML)</option>
+                <option value = "mech">mechanical Engineering</option>
+                <option value = "ECE">Electronics and communication engineering</option>
+            </select>
+            <br>
+            <label for = "comment">enter any comments</label>
+            <textarea id = "comments" name = "comments" rows = "5" cols="50" placeholder = "enter the comments" >
+            </textarea>
+            <br>
+            <!--submit & reset buttons-->
+            <button type = "submit">submit</button>
+            <br>
+            <button type = "Reset">Reset</button>
+            <br>
+            </fieldset>  
+         </form>
+         <!--PART-D-->
+         <h3>PART-D </h3>
+        <header>
+        <h1>HTML5 Features Demo</h1>
+        </header>
+          <nav>
+        <a href="#semantic">Semantic Elements</a> &nbsp;|&nbsp;
+        <a href="#audio">Audio</a> &nbsp;|&nbsp;
+        <a href="#video">Video</a> &nbsp;|&nbsp;
+        <a href="#inputs">HTML5 Input Types</a>
+        <hr>
+          </nav>
+          <section id="semantic">
+            <h3>Anits:</h3>
+            <p>ANITS (Anil Neerukonda Institute of Technology and Sciences) is an autonomous private engineering college
+                 located in Sangivalasa, Bheemunipatnam Mandal, Andhra Pradesh. 
+                 It was established in 2001 by the Anil Neerukonda Educational Society, is affiliated with Andhra University,
+                  and is approved by AICTE.</p>
+                  <article>     
+            <h3>&lt;article&gt;</h3>
+            <p>Represents self-contained content like blog posts, news articles, or forum posts.</p>
+
+                  </article>
+          </section>
+          <section>
+            <h3>Education :</h3>
+            <p>I am sailaxmi present purssing B.Tech 3rd in computer Science and Engineering 
+                in the department of Artificial Inteligence and Mchine Learning.My Journey started in tecnical field with C 
+                later on i have improved my skills by learning java,python,DBMS etc</p>
+          </section>
+          <section id="audio">
+            <h3>Audio</h3>
+
+            <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            </audio>
+        
+          </section>
+          <section id = "video">
+            <video controls width="560">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <br>
+            
+        </section>
+        
+
+        </video>
+        <section id = "HTML inputs">
+        <form action="#">
+            <label for="demo-email">Email:</label><br>
+            <input type="email" id="demo-email" placeholder="your@email.com"><br><br>
+
+            <label for="demo-date">Date:</label><br>
+            <input type="date" id="demo-date"><br><br>
+
+            <label for="demo-number">Number (Age):</label><br>
+            <input type="number" id="demo-number" min="17" max="35"><br><br>
+
+            <label for="demo-color">Color:</label><br>
+            <input type="color" id="demo-color"><br><br>
+
+            <label for="demo-range">Range:</label><br>
+            <input type="range" id="demo-range" min="0" max="100"><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        
+          </section>
+           <footer>
+        <p>© 2026 <b>ANITS</b> - Anil Neerukonda Institute of Technology and Sciences</p>
+    </footer>
+</body>
+ 
+</html>

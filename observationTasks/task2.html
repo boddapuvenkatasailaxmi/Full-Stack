@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Styled Webpage</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f0f4f8;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    header {
+      background: #2c3e50;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+    }
+    nav a:hover {
+      background: #3498db;
+      border-radius: 5px;
+    }
+    canvas {
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      width: 100%;
+      background: white;
+    }
+    .cards {
+      display: flex;
+      gap: 15px;
+      margin: 15px 0;
+    }
+    .card {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1;
+    }
+    .card:hover {
+      background: #3498db;
+      color: white;
+    }
+    .btn {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #e74c3c;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Styled Webpage</h1>
+      <p>HTML5 Canvas · CSS3 Styling</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Canvas</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <canvas id="myCanvas" width="800" height="300"></canvas>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Web Dev</h3>
+        <p>HTML5, CSS3, JavaScript</p>
+        <button class="btn">Learn</button>
+      </div>
+      <div class="card">
+        <h3>CSS3</h3>
+        <p>Gradients, Shadows, Animations</p>
+        <button class="btn">Learn</button>
+      </div>
+      <div class="card">
+        <h3>Canvas</h3>
+        <p>Graphics and Drawing</p>
+        <button class="btn">Learn</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>CSS3: Selectors · Colors · Fonts · Borders · Margins · Padding · Backgrounds · Box Shadow · Text Shadow · Rounded Corners · Gradients · Hover Effects</p>
+    </footer>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Background
+    ctx.fillStyle = '#e8f4f8';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Rectangle
+    ctx.fillStyle = '#3498db';
+    ctx.shadowColor = 'rgba(0,0,0,0.2)';
+    ctx.shadowBlur = 10;
+    ctx.fillRect(30, 30, 180, 110);
+    ctx.shadowBlur = 0;
+    ctx.strokeStyle = '#2c3e50';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(30, 30, 180, 110);
+
+    // Circle
+    ctx.shadowBlur = 15;
+    ctx.fillStyle = '#e74c3c';
+    ctx.beginPath();
+    ctx.arc(340, 85, 65, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+    ctx.strokeStyle = '#2c3e50';
+    ctx.stroke();
+
+    // Line
+    ctx.shadowBlur = 8;
+    ctx.beginPath();
+    ctx.moveTo(480, 30);
+    ctx.lineTo(770, 160);
+    ctx.strokeStyle = '#27ae60';
+    ctx.lineWidth = 6;
+    ctx.setLineDash([12, 10]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Name
+    ctx.shadowBlur = 10;
+    ctx.fillStyle = '#8e44ad';
+    ctx.font = 'bold 42px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('Sai Laxmi', 400, 235);
+  </script>
+</body>
+</html>
