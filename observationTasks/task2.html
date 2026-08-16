@@ -1,69 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Styled Webpage</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      padding: 20px;
-    }
-    canvas {
-      border: 2px solid #333;
-      background: white;
-    }
-  </style>
-</head>
-<body>
-  <h2>HTML 5 Canvas</h2>
-  <h3>Rectangle | circle | straightline | Name as text</h3>
-
-  <canvas id="myCanvas" width="600" height="300"></canvas>
-
-  <script>
-    const canvas = document.getElementById('myCanvas');
-    const ctx = canvas.getContext('2d');
-
-    // Rectangle
-    ctx.fillStyle = '#3498db';
-    ctx.fillRect(30, 30, 160, 100);
-    ctx.strokeStyle = '#2c3e50';
-    ctx.lineWidth = 1;
-    ctx.strokeRect(30, 30, 160, 100);
-
-    // Circle
-    ctx.fillStyle = '#e74c3c';
-    ctx.beginPath();
-    ctx.arc(310, 80, 60, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.strokeStyle = '#2c3e50';
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.arc(310, 80, 60, 0, Math.PI * 2);
-    ctx.stroke();
-
-    // Line
-    ctx.beginPath();
-    ctx.moveTo(430, 30);
-    ctx.lineTo(570, 150);
-    ctx.strokeStyle = '#27ae60';
-    ctx.lineWidth = 4;
-    ctx.stroke();
-
-    // Name
-    ctx.fillStyle = '#8e44ad';
-    ctx.font = 'bold 30px Arial';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText('Sai Laxmi', 300, 220);
-  </script>
-</body>
-</html>
-<h3><b>Part - B</b></h3>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Task2_partB.html</title>
+  <title>Task-2 part-B</title>
   <style>
     * {
       margin: 0;
