@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Students marks average calculation</title>
-    </head>
-    <body>
-        <button id="submit">Calculate_sum</button>
-        <script src = "average.js"></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h2>Dynamic Budget Tracker</h2>
+            <!-- This value updates dynamically using JavaScript -->
+            <div class="balance-card">
+                <span>Total Balance</span>
+                <h1 id="total-balance">₹0.00</h1>
+            </div>
+        </header>
+
+        <!-- Form for capturing dynamic user input -->
+        <form id="tracker-form">
+            <input type="text" id="reason-input" placeholder="What did you buy/earn?" required autocomplete="off">
+            <input type="number" id="amount-input" placeholder="Amount (e.g., 500, -200)" required>
+            <button type="submit">Add Transaction</button>
+        </form>
+
+        <h3>Transaction History</h3>
+        <!-- This list starts empty and is filled dynamically by JavaScript -->
+        <ul id="transaction-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

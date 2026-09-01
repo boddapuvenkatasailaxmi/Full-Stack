@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+.app-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+.balance-card {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover { background: #2980b9; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+
+/* Dynamic List Item Styles */
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #fdfdfd;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-right: 5px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+/* Appended dynamically if amount is positive */
+.transaction-item.income { border-right-color: #2ecc71; }
+
+/* Appended dynamically if amount is negative */
+.transaction-item.expense { border-right-color: #e74c3c; }
+
+.delete-btn {
+    background: none;
+    color: #e74c3c;
+    border: none;
+    padding: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
