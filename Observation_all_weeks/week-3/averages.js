@@ -1,25 +1,27 @@
-const student_marks = [90,97,94,74,86]
-console.log(student_marks.push(76));
-console.log(student_marks);
-console.log(student_marks.pop());
-console.log(student_marks);
-console.log(student_marks.length);
-console.log(student_marks.slice(1,3));
-const submit = document.getElementById("submit");
-submit.addEventListener("click", calculate_sum);
+const student_marks = [90, 97, 94, 74, 86]
+
+console.log(student_marks.push(76))
+console.log(student_marks)
+console.log(student_marks.pop())
+console.log(student_marks)
+console.log(student_marks.length)
+console.log(student_marks.slice(1,3))
+
 function calculate_sum(){
-    let sum = 0;
+    let sum=0
     for(let i=0;i<student_marks.length;i++){
-         sum+=student_marks[i];
+        sum+=student_marks[i]
     }
-    console.log(sum);
+    console.log(sum)
 }
+
 function calc_avg(){
-    let sum= 0;
-    for(let i = 0;i<student_marks.length;i++){
-        sum += student_marks[i]; 
+    let sum=0
+    for(let i=0;i<student_marks.length;i++){
+        sum+=student_marks[i]
     }
-      avg = ((sum)/student_marks.length);
-    console.log(avg);
+    let avg=sum/student_marks.length
+    console.log(avg)
 }
+
 calc_avg()
