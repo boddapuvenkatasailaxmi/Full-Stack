@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 30px;
+    }
+
+    .box {
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 8px 14px;
+      margin: 4px;
+      border: 1px solid #ccc;
+      background: #f0f0f0;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover { background: #e0e0e0; }
+  </style>
+</head>
+<body>
+
+  <h1>DOM Manipulation Demo</h1>
+
+  <!-- ============ The target element we will change ============ -->
+  <div class="box" id="myBox">
+    <h2 id="myTitle">Original Title</h2>
+    <p id="myPara">Original paragraph text.</p>
+  </div>
+
+  <!-- ============ Buttons ============ -->
+  <h3>Change Content</h3>
+  <button onclick="changeText()">Change Text</button>
+  <button onclick="changeHTML()">Change HTML</button>
+
+  <h3>Change Style</h3>
+  <button onclick="changeColor()">Change Color</button>
+  <button onclick="changeBg()">Change Background</button>
+
+  <h3>Change Attribute</h3>
+  <button onclick="changeAttr()">Add Title Attribute</button>
+  <button onclick="removeAttr()">Remove Attribute</button>
+
+  <script>
+    // Step 1 — Grab the elements we need
+    const box   = document.getElementById("myBox");
+    const title = document.getElementById("myTitle");
+    const para  = document.getElementById("myPara");
+
+    // Step 2 — Content manipulation
+    function changeText() {
+      para.textContent = "Text changed using textContent!";
+    }
+
+    function changeHTML() {
+      title.innerHTML = "New <span style='color:red'>Red Title</span>";
+    }
+
+    // Step 3 — Style manipulation
+    function changeColor() {
+      para.style.color = "blue";
+    }
+
+    function changeBg() {
+      box.style.background = "#ffeaa7";
+    }
+
+    // Step 4 — Attribute manipulation
+    function changeAttr() {
+      para.setAttribute("title", "This is a tooltip added by JS");
+      para.textContent = "Hover over me to see the tooltip!";
+    }
+
+    function removeAttr() {
+      para.removeAttribute("title");
+      para.textContent = "Attribute removed.";
+    }
+  </script>
+
+</body>
+</html>
