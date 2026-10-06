@@ -1,0 +1,8 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "MongoDB student management - collegeDB",
+  "main": "dashboard.js",
+  "scripts": { "dashboard": "node dashboard.js" },
+  "dependencies": { "mongodb": "^6.0.0" }
+}
